@@ -14,6 +14,9 @@ function Menu(props){
                 // right arrow is inserted before every list
                 // item in ios
                 hideChevron={true}
+                // onPress needs to be a function which takes nothing and
+                // call onPress with item.id
+                onPress={()=>props.onPress(item.id)}
                 // takes an image
                 // require = Specify the particular image
                 // cannot change it programatically
